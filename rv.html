@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+     <title>Learning DOM</title>
+ <script>
+  function learnDOM(){
+ var classA = document
+  .childNodes[0]//html
+   .childNodes[1]//body
+   .childNodes[3]//div 
+   .childNodes[3] 
+   
+   //  console.log("Out put:"+classA.innerHTML)
+    console.log("Out put nodeName:"+classA.nodeName) 
+    
+    console.log("Out put nodeName parent:"+classA.parentNode.nodeName) //type 
+    console.log("Out put nodetype:"+classA.nodeType)
+     console.log("Out put nodeName text:"+classA.childNodes[0].nodeType)
+      console.log("Out put nodetype parent:"+classA.parentNode.nodeType)
+       console.log("Out put nodetyp html:"+document.childNodes[0].nodeType)
+  }
+// function getAttributes(){
+//     let linkA=document.getElementById("w3r")
+//     let typeLink=linkA.getAttribute("type")
+//     document.write(typeLink)
+//     let hrefLanguage=linkA.getAttribute("hreflang")
+//     document.write(hrefLanguage)
+//     let relevance=linkA.getAttribute("rel")
+//     document.write(relevance)
+//     document.write(linkA.getAttribute("id")
+//      document.write(linkA.getAttribute("target")
+// }
+    </script> 
+    
+    </head> 
+    <body>
+        <!-- <p><a id="w3r" type="text/html" hreflang="en-us" rel="nofollow" target="_self" href="https://www.w3resource.com/">w3resource</a></p>
+<button onclick="getAttributes()">Click here to get  attributes value</button> -->
+         <div class="default-styles" id="learnAttr">        
+        <h3>List</h3> 
+        <p>Class C</p> 
+        <p>Class B</p>
+<p>Class A</p> 
+</div><button type="button" onclick="learnDOM()">Learn DOM</button>
+</body>
+</html>

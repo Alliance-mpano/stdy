@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <title>Document</title> 
+       <script>
+        function domDome() {
+            var parentDiv = document.getElementById("demo");
+            var newNodeElement = document.createElement('input');
+            var newNodeText = document.createTextNode("This is the new paragraphy");
+            newNodeElement.appendChild(newNodeText);
+           var divFirstChild = parentDiv.firstChild;
+            console.log( parentDiv.insertBefore(newNodeElement,divFirstChild));
+            // var wholeDocument = document.childNodes[0].childNodes[1].childNodes[0].childNodes[2];
+    
+            // console.log("Out put nodeName for the body :"+wholeDocument.nodeName);
+            //  console.log("Out put nodeName parent:"+wholeDocument.parentNode.nodeName);
+            //  console.log("Out put nodetype for the body:"+wholeDocument.nodeType) 
+            //  console.log("Out put nodeName text:"+wholeDocument.childNodes[0].nodeType)
+            //  console.log("Out put nodetype parent for the html:"+wholeDocument.parentNode.nodeType)
+            //console.log("Out put for the first child of the body : "+wholeDocument.firstChild.nodeType);
+              //   console.log("Out put nodetyp html:"+document.childNodes[0].nodeType)
+        }
+      
+    </script>
+</head>
+<body>
+    <div id="demo">
+        <p>Class A</p>
+        <p>Class B</p>
+        <p>Class C</p>
+    </div>
+    <button onclick="domDome()">Click me</button>
+</body>
+
+</html>

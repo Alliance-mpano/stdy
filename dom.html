@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="dom.js"></script>
+    <title>Document</title>
+
+    
+</head>
+<body>
+    <div >
+        <span>
+    <p id="nation">
+        Rwanda
+    </p>
+</span>
+    <p>Burundi</p>
+<p>Uganda</p>
+<p>Korea</p>
+<p>Tanzania</p>
+<p>China</p>
+<p>
+    America
+</p>
+<p>Madagascar</p>
+<button id="change"onclick="get()">CLICK HERE</button>
+<ul id="menu"
+><li>Home</li
+        ><li>Products</li
+        ><li id="current">Customer Support</li
+            ><li>Careers</li
+                ><li>Investors</li
+                    ><li>News</li
+                        ><li>About Us</li
+                        ></ul>
+<button onclick="tabs()">try</button>
+
+</div>
+<script>
+    function get(){
+    var countries=document.getElementById("nation");
+    document.write(countries.parentNode.nodeName);
+}
+document.write(document.head.firstElementChild.nodeType)
+function tabs(){
+var now=document.getElementById("menu")
+console.log(now.firstElementChild);
+}
+var list=document.getElementById('current');
+document.write(list.getAttribute("id"));
+</script>
+</body>
+</html>

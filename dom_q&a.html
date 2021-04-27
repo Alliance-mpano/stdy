@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS DOM paragraph style</title>
+    </head>
+    <body>
+        <p id="text">Javascript Exercises-w3resource</p>
+        <div>
+            <button id="jsstyle" onclick="js_style()">Style</button>
+        </div>
+        <form id="form1"  onsubmit="getFormvalue()">
+        First name: <input onmouseover="changeColor()" type="text" name="fname" id="fn" value="David"><br>
+        Last name: <input type="text" name="lname" id="ln" value="Beckham"><br>
+        <input type="submit" value="Submit"> 
+       <p>
+           <a id="w3r" type="text/html" hreflang="en-us" rel="nofollow" target="_self" href="https://www.w3resource.com/">
+            w3resource</a>
+        </p>
+<button onclick="getAttributes()">Click here to get  attributes value</button>
+    </form>
+        <script>
+            function changeColor(){
+                var inside=document.getElementsByTagName("input")
+                inside.style.backgroundColor="green"
+            }
+            function getAttributes(){
+                let attributes=document.getElementById("w3r")
+                document.write("The id of this link is "+attributes.getAttribute('id'))
+                document.write(attributes.getAttribute("type"))
+                document.write(attributes.getAttribute("hreflang"))
+                alert(attributes.getAttribute("rel"))
+                // document.write(getAttributes("hreflang","rel","target","href"))
+            }
+           document.write(document.body.firstElementChild.nodeName)
+            // // function getAttributes(){
+            // //     let attributes= document.getElementById("w3r").childNodes
+            // //     for(let attribute of attributes){
+            // //         let attrib=attribute.nodeValue
+            // //         alert(attrib)
+            // //     }
+                
+            // }
+    //         function getFormvalue(){
+    //            let firstName= document.getElementById("fn").value
+    //            document.write(`The first name is: ${firstName}`)
+    //             }
+      let par= document.getElementById("text");
+            par.style.backgroundColor="green"
+            
+    //     function js_style(){
+    //         var par=document.getElementById("text")
+    //        par.style.font="40px Arial,sans-serif"
+    //         par.style.color="crimson"
+    //     }
+            
+        </script>
+    </body>
+</html>

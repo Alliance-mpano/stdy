@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="text">hey</p>
+    <p id="demo"></p>
+    <script>
+        // var list = document.getElementsByTagName("li")
+        // for(li of list){
+        //     // alert("the number is "+)
+        // }
+        // document.write(list.value)
+       var par= document.getElementById("text")
+       par.addEventListener("click",addText)
+       par.addEventListener("mouseout",outMove)
+       par.addEventListener("mouseover",focusedOn)
+        function addText(){
+            document.getElementById("demo").innerHTML+="Clicked <br>"
+        }
+        function outMove(){
+            document.getElementById("demo").innerHTML+="Mouse out! <br>"
+        }
+        function focusedOn(){
+            document.getElementById("demo").innerHTML+="Mouse over! <br>"
+        }
+        
+    </script>
+    
+     <div>
+         <ul>
+             <li>1</li>
+             <li>2</li>
+             <li>3</li>
+             <li>4</li>
+             <li>5</li>
+             <li>6</li>
+             <li>7</li>
+         </ul>
+         <ol>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+         </ol>
+     </div>
+     <a href="javascript:void(document.body.style.backgroundColor='red');">CHange the body's backgroundColor</a>
+</body>
+</html>

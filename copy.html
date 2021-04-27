@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>
+        Esignatures
+    </title>
+    <style>
+        th{
+            background-color: rgb(41, 130, 219);
+            color: white;
+        }
+    </style>
+    </head>
+    <body>
+        <h3 style="color: green;">Create New Online User</h3>
+        <hr border="3">
+        <form action="#" method="GET">
+            <table  width="90%" align="center">
+        <tr>
+            <th colspan="2">Login Details</th>
+        </tr>
+        <tr>
+           <td colspan="2"><label for="valid"><b>Email ID*</b></label>
+            <input type="email" name="email" required id="valid" title="Enter your valid email, e.g someone@example.com ">
+           </td>
+        </tr>
+        <tr>
+            <td><label for="password"><b>Password*</b></label>
+            <input type="password" name="pword" id="password" required>
+            </td>
+            <td><label for="passw"><b>Confirm Password</b></label>
+            <input type="password" name="pword" id="passw" required>
+            </td>
+        </tr>
+            </table><br>
+        <table width="90%" align="center">
+       <tr>
+       <th colspan="2"> Personal Identification Document</th>
+       </tr>
+       <tr>
+        <td><label for="id"> <b>ID Document*</b></label>
+        <select name="id" id="id">
+            <option value="">--Please Select Type--</option>
+            <option value="nid">NID</option>
+            <option value="passport">PASSPORT</option>
+        </select></td>
+        <td><label for="country"><b>Country*</b></label>
+        <select name="count" id="country">
+        <option value=""><b>--Please Select Country--</b></option>
+        <option value="ALGERIA"><b>ALGERIA</b></option>
+        <option value="ANGOLA"><b>ANGOLA</b></option>
+        <option value="BURUNDI"><b>BURUNDI</b></option>
+        <option value="CAMEROON"><b>CAMEROON</b></option>
+        <option value="DRC"><b>DRC</b></option>
+        <option value="ENGLAND"><b>ENGLAND</b></option>
+        <option value="FINLAND"><b>FINLAND</b></option>
+        </select></td><br>
+    </tr>
+    <tr>
+        <td colspan="2"><label for="doc"><b>ID Document No*</b></label>
+        <input type="text"name="docu" id="doc" required></td>
+    </tr>
+    </table><br>
+    <table border="1" cellspacing="0" length="700" width="90%" cellpadding="6" align="center">
+        <tr>
+   <th colspan="2">Personal Details</th></tr>
+   <tr>
+        <td><label for="pd"><b>First Name</b></label>
+        <input type="text" name="frstnm" id="pd" required></td>
+       <td><label for="countr"><b>Country</b></label>
+        <select name="count" id="countr">
+            <option value=""><b>--Please Select Country--</b></option>
+            <option value="ALGERIA"><b>ALGERIA</b></option>
+            <option value="ANGOLA"><b>ANGOLA</b></option>
+            <option value="BURUNDI"><b>BURUNDI</b></option>
+            <option vaolue="CAMEROON"><b>CAMEROON</b></option>
+            <option value="DRC"><b>DRC</b></option>
+            <option value="ENGLAND"><b>ENGLAND</b></option>
+            <option value="FINLAND"><b>FINLAND</b></option>
+            <option value="ZAMBIA"><b>ZAMBIA</b></option>
+            </select></td>
+    </tr>
+    <tr>
+        <td><label for="midname"><b>Middle Name</b></label>
+        <input type="text" name="middlename" id="midname" required>
+        </td>
+        <td><label for="provi"><b>Province*</b></label>
+        <input type="text" name="province" id="provi" required><br>
+        </td>
+    </tr>
+    <tr>
+        <td><label for="lstname"><b>Last Name</b></label>
+        <input type="text" name="name" id="provi" required>
+        </td>
+        <td><label for="distr"><b>District*</b></label>
+        <input type="text" name="district" id="lstname" required><br>
+        </td>
+    </tr>
+    <tr>
+        <td><label><b>Gender*</b></label>
+        <input type="radio" name="gender" value="male">
+        <label><b>Male</b></label>
+        <input type="radio" name="gender" value="female">
+        <label><b>Female</b></label>
+        </td>
+        <td><label for="sector"><b>Sector</b></label>
+        <input type="text" name="sector" id="sector" required>
+        </td>
+    </tr>
+    <tr>
+        <td><label for="dob"><b>Date Of Birth</b></label>
+        <input type="date" name="Birth" id="dob" required>
+        </td>
+        <td><label for="cell"><b>Cell</b></label>
+        <input type="text" name="cell" id="cell" required>
+        </td>
+    </tr>
+    <tr>       
+        <td><label for="nation"><b>Nationality</b></label>
+        <select name="nationality" id="nation">nation
+        <option value=""><b>Please Select Nationality</b></option>
+        <option value="algerian"><b>Algerian</b></option>
+        <option value="angolan"><b>Angolan</b></option>
+        <option value="burundian"><b>Burundian</b></option>
+        <option value="cameroonian"><b>Cameroonian</b></option>
+        <option value="congolese"><b>Congolese</b></option>
+        <option value="irish"><b>Irish</b></option>
+        <option value="finesse"><b>Finesse</b></option>
+        <option value="zambian"><b>Zambian</b></option>
+    </select></td>
+    <td><label for="ville"><b>Village</b></label>
+    <input type="text" name="village" id="ville" required>
+    </td>
+    <tr>
+    <td><label for="phone"><b>Contact Number</b></label>
+    <input type="number" name="contact" id="phone" required>
+    </td>
+    <td>
+    <label for="street"><b>Street Name and Number</b></label> 
+    <input type="text" name="street" id="street" required>
+    </td>
+    </tr>
+    <tr>
+    <td></td>
+    <td><label for="post"><b>P.O Box</b></label>
+    <input type="text" name="p.o box" id="post" required>
+    </td>
+    </tr>
+</table> 
+<table width="90%" align="center" cellspacing="0" border="3" inside-border="none">
+    <tr>
+<th colspan="3">Passport attachment</th>  
+</tr>
+
+<tr>
+<td>
+    <input type="file" name="passport"></td>
+  <td colspan="2"><input type="submit" value="Attach" style="background-color: rgb(33, 52, 221);">
+</td>
+</tr>
+
+<tr style="background-color: green;">
+    <th>File ID Type</th>
+    <th>File Name</th>
+    <th>File Size(KB)</th>
+</tr>
+<tr>
+    <td colspan="3">List is Empty!!</td>
+</tr>
+</table> 
+<style>
+    label{
+        margin-left: 20px;
+        text-align: center;
+    }
+</style>
+<label for="text">Enter text*</label>
+<input type="text" name="enter" id="text">
+</form>
+    </body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+     <script>
+          function displayBestRated(){
+          let highSchools=document.getElementsByTagName("p")
+          for(i=0;i<highSchools.length;i++){
+               if(i==0 ) {
+                    highSchools[8].innerText=highSchools[i].innerText;
+          }
+          if(i==4){
+               highSchools[9].innerHTML=highSchools[i].innerHTML;
+               highSchools[9].style.backgroundColor="crimson"
+               highSchools[9].style.color="white"
+          }
+          }
+     }
+     </script>
+     <div id="highSchools"> <h2>Good high schools in rwanda</h2> 
+          <p>Rwanda Coding Academy</p>
+           <p>Riviera High School</p> 
+          <p>Muhanga High School</p>
+           <p>Gashora Girls Academy</p>
+           </div>
+           <div id="vasities">
+                <h2>Good Universities in Rwanda</h2>
+                 <p>KIST</p>
+                  <p>SFB</p>
+                   <p>CMU</p>
+                    <p>Rukara University</p> 
+               </div>
+      <div id="highlyRated">
+          <h2>High rates</h2>
+           <p></p>
+            <p></p>
+           </div>
+            <button onclick="displayBestRated()">Display Highly rated</button>
+</body>
+</html>
+ <!-- <!DOCTYPE html>
+<html>
+     <head>
+          <title>Learing by tag name</title> 
+          <script>
+           function readHighSchools(){
+                 var highSchools = document.getElementsByTagName("p")
+                  for(i=0;i<highSchools.length;i++){ console.log(highSchools[i].innerHTML);
+                   } 
+                   }
+                    </script>
+                     </head> 
+                     <body>
+                           <h2>High schools</h2>
+                            <div id="highSchools">
+                              <p>Rwanda coding academy</p>
+                               <p>Byimana Secondary school.</p> 
+                              <p>St Andrew Secondary school.</p> 
+                         </div>
+                          <button onclick="readHighSchools()">Read only high schools</button> 
+                         </body> 
+                         </html>  -->
+  <!-- <!DOCTYPE html>
+ <html>
+     <head>
+         <title>DOM</title>
+         <script>
+              function myFunction(){
+         
+             let par= document.querySelectorAll("p")
+           
+            let para=""
+              for(i=0;i<par.length;i++){
+                  para += par.elements[i].innerHTML+"<br>" 
+             }
+                document.getElementById("demo").innerHTML=para
+                   let x=document.forms["frm1"]
+              let par=""
+              let i;
+              }
+              function myFunction(){
+                  let text=document.getElementById("demo").innerHTML="Good work"
+          
+           }
+         </script>
+     </head>
+     <body>
+         <p>Student 1</p>
+         <p>Student 2</p>
+         <p>Student 3</p>
+        <p>Student 4</p>
+        <p>Student 5</p>
+         <p id="demo"></p>
+         <input type="text" name="fname" id="fname" onfocus="makeFieldYellow()" onBlur="makeFieldBlue()">
+         <a href="javascript:void(0)" onclick="alert('Hello')">Greet</a>
+         <a href="javascript:void(0)"><img src="jki.jpg" onclick="writeWord()" onmouseover="src='byo.jpg'"> </a>
+         <script>
+             function makeFieldYellow(){
+                 let area_input=document.getElementById("fname")
+                 area_input.style.backgroundColor='Yellow'
+                 area_input.style.fontSize="24px"
+            }
+             function makeFieldBlue(){
+                 let outside=document.getElementById("fname")
+                 outside.style.backgroundColor="Blue"
+                 outside.style.color="white"
+                 outside.style.padding="5px"
+             }
+             function writeWord(){
+                 let paragraphs=document.getElementById("demo")
+
+             }
+             function getEmail(){
+                 let mail=document.getElementById("email")
+                 document.write(`The email is :${mail.value}`)
+             }
+ let text=document.getElementById("demo").innerHTML="Good work"
+         </script>
+         <label for="">Email</label>
+         <input type="email" name="email" id="email">
+         <button onclick="getEmail()">Get Email</button>
+         <p>To rewrite the above sentences click on the next button</p>
+          <button onclick="myFunction()">Try it</button> -->
+         <!-- <p id="demo">This works well</p>
+         <p id="intro"></p>
+         <p></p> 
+         <form id="frm1" action="/action_page.php">
+             First name: <input type="text" name="fname" value="Donald"><br>
+             Last name: <input type="text" name="lname" value="Duck"><br><br>
+             <input type="submit" value="Submit">
+           </form> 
+           <p>Click "Try it" to display the value of each element in the form.</p>
+
+ <button onclick="myFunction()">Try it</button>
+ <p id="demo"> </p> 
+      </body>
+      </html>  -->

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Arrays</title>
+</head>
+<body>
+	<div>
+		<ul><ol>
+			<li>Maths</li>
+			<li>English</li>
+			<li>Biology</li>
+			<li>E-ship</li>
+			<li>History</li>
+		</ol></ul>
+	</div>
+	<p>Trying</p>
+	<h4>Failed</h4>
+	<script type="text/javascript">
+		let students = new Array("John", "Ann", "Aaron", "Edwin", "Elizabeth");
+		Array.prototype.displayItems=function(){
+			for (i=0;i<this.length;i++){
+				document.write(this[i] + "<br />");
+			}
+		}	
+		document.write("students array<br />");
+		students.displayItems();
+		document.write("<br />The number of items in students array is " + students.length + "<br />");
+		document.write("<br />The SORTED students array<br />");
+		students.sort();
+		students.displayItems();
+		document.write("<br />The REVERSED students array<br />");
+		students.reverse();
+		students.displayItems();
+		document.write("<br />THE students array after REMOVING the LAST item<br />");
+		students.pop();
+		students.displayItems();
+        document.write("<br />THE students array after PUSH<br />");
+        students.push("New Stuff");
+		students.displayItems();
+		let names=["Yannick","Delice","Alliance","Pascaline","Shoulamite"]
+
+		for(let name of names){
+			document.write(name+"<br />")
+		}
+		
+		/*for (let i = 0; i < document.body.childNodes.length; i++) {
+      document.write( document.body.childNodes[i] )
+
+		}*/
+		for(let child of document.body.children){
+			document.write(child)
+		}
+		/*document.write(document.body.childNodes.length)*/
+		/*names.push("Ishema","Impano","Agasaro");
+	    names.displayItems();
+		names.unshift("Shema");
+		names.displayItems();*/
+	</script>
+</body>
+</html>
